@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoanalyst"
+version = "0.1.0"
+description = "A configurable LangGraph business data analysis agent"
+requires-python = ">=3.11"
+dependencies = ["langgraph>=0.2,<1.0", "langchain-core>=0.3", "pydantic>=2.7", "pandas>=2.0", "matplotlib>=3.7", "openpyxl>=3.1", "python-dotenv>=1.0", "PyYAML>=6.0", "openai>=1.30", "anthropic>=0.84"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov>=5.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

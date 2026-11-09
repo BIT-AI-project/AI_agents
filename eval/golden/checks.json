@@ -1,0 +1,455 @@
+{
+  "dataset": "UCI Online Retail sales_facts",
+  "checks": [
+    {
+      "question_id": "Q01",
+      "entity_type": "product_description",
+      "entity_name": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2369,
+      "expected_lifetime_net_revenue_gbp": 99668.47,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q02",
+      "entity_type": "product_description",
+      "entity_name": "WHITE METAL LANTERN",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 328,
+      "expected_lifetime_net_revenue_gbp": 7916.75,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q03",
+      "entity_type": "product_description",
+      "entity_name": "REGENCY CAKESTAND 3 TIER",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2200,
+      "expected_lifetime_net_revenue_gbp": 164762.19,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q04",
+      "entity_type": "product_description",
+      "entity_name": "PARTY BUNTING",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1727,
+      "expected_lifetime_net_revenue_gbp": 98302.98,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q05",
+      "entity_type": "product_description",
+      "entity_name": "JUMBO BAG RED RETROSPOT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2159,
+      "expected_lifetime_net_revenue_gbp": 92356.03,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q06",
+      "entity_type": "product_description",
+      "entity_name": "RABBIT NIGHT LIGHT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1051,
+      "expected_lifetime_net_revenue_gbp": 66756.59,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q07",
+      "entity_type": "product_description",
+      "entity_name": "PAPER CHAIN KIT 50'S CHRISTMAS",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1210,
+      "expected_lifetime_net_revenue_gbp": 63791.94,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q08",
+      "entity_type": "product_description",
+      "entity_name": "ASSORTED COLOUR BIRD ORNAMENT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1501,
+      "expected_lifetime_net_revenue_gbp": 58959.73,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q09",
+      "entity_type": "product_description",
+      "entity_name": "CHILLI LIGHTS",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 679,
+      "expected_lifetime_net_revenue_gbp": 53768.06,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q10",
+      "entity_type": "product_description",
+      "entity_name": "SPOTTY BUNTING",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1172,
+      "expected_lifetime_net_revenue_gbp": 42065.32,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q11",
+      "entity_type": "product_description",
+      "entity_name": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2369,
+      "expected_lifetime_net_revenue_gbp": 99668.47,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q12",
+      "entity_type": "product_description",
+      "entity_name": "WHITE METAL LANTERN",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 328,
+      "expected_lifetime_net_revenue_gbp": 7916.75,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q13",
+      "entity_type": "product_description",
+      "entity_name": "REGENCY CAKESTAND 3 TIER",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2200,
+      "expected_lifetime_net_revenue_gbp": 164762.19,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q14",
+      "entity_type": "product_description",
+      "entity_name": "PARTY BUNTING",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1727,
+      "expected_lifetime_net_revenue_gbp": 98302.98,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q15",
+      "entity_type": "product_description",
+      "entity_name": "JUMBO BAG RED RETROSPOT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2159,
+      "expected_lifetime_net_revenue_gbp": 92356.03,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q16",
+      "entity_type": "product_description",
+      "entity_name": "RABBIT NIGHT LIGHT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1051,
+      "expected_lifetime_net_revenue_gbp": 66756.59,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q17",
+      "entity_type": "product_description",
+      "entity_name": "PAPER CHAIN KIT 50'S CHRISTMAS",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1210,
+      "expected_lifetime_net_revenue_gbp": 63791.94,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q18",
+      "entity_type": "product_description",
+      "entity_name": "ASSORTED COLOUR BIRD ORNAMENT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1501,
+      "expected_lifetime_net_revenue_gbp": 58959.73,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q19",
+      "entity_type": "product_description",
+      "entity_name": "CHILLI LIGHTS",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 679,
+      "expected_lifetime_net_revenue_gbp": 53768.06,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q20",
+      "entity_type": "product_description",
+      "entity_name": "SPOTTY BUNTING",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1172,
+      "expected_lifetime_net_revenue_gbp": 42065.32,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q21",
+      "entity_type": "product_description",
+      "entity_name": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2369,
+      "expected_lifetime_net_revenue_gbp": 99668.47,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q22",
+      "entity_type": "product_description",
+      "entity_name": "WHITE METAL LANTERN",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 328,
+      "expected_lifetime_net_revenue_gbp": 7916.75,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q23",
+      "entity_type": "product_description",
+      "entity_name": "REGENCY CAKESTAND 3 TIER",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2200,
+      "expected_lifetime_net_revenue_gbp": 164762.19,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q24",
+      "entity_type": "product_description",
+      "entity_name": "PARTY BUNTING",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1727,
+      "expected_lifetime_net_revenue_gbp": 98302.98,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q25",
+      "entity_type": "product_description",
+      "entity_name": "JUMBO BAG RED RETROSPOT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2159,
+      "expected_lifetime_net_revenue_gbp": 92356.03,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q26",
+      "entity_type": "product_description",
+      "entity_name": "RABBIT NIGHT LIGHT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1051,
+      "expected_lifetime_net_revenue_gbp": 66756.59,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q27",
+      "entity_type": "product_description",
+      "entity_name": "PAPER CHAIN KIT 50'S CHRISTMAS",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1210,
+      "expected_lifetime_net_revenue_gbp": 63791.94,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q28",
+      "entity_type": "product_description",
+      "entity_name": "ASSORTED COLOUR BIRD ORNAMENT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1501,
+      "expected_lifetime_net_revenue_gbp": 58959.73,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q29",
+      "entity_type": "product_description",
+      "entity_name": "CHILLI LIGHTS",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 679,
+      "expected_lifetime_net_revenue_gbp": 53768.06,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q30",
+      "entity_type": "product_description",
+      "entity_name": "SPOTTY BUNTING",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1172,
+      "expected_lifetime_net_revenue_gbp": 42065.32,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q31",
+      "entity_type": "product_description",
+      "entity_name": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2369,
+      "expected_lifetime_net_revenue_gbp": 99668.47,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q32",
+      "entity_type": "product_description",
+      "entity_name": "WHITE METAL LANTERN",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 328,
+      "expected_lifetime_net_revenue_gbp": 7916.75,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q33",
+      "entity_type": "product_description",
+      "entity_name": "REGENCY CAKESTAND 3 TIER",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2200,
+      "expected_lifetime_net_revenue_gbp": 164762.19,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q34",
+      "entity_type": "product_description",
+      "entity_name": "PARTY BUNTING",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1727,
+      "expected_lifetime_net_revenue_gbp": 98302.98,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q35",
+      "entity_type": "product_description",
+      "entity_name": "JUMBO BAG RED RETROSPOT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2159,
+      "expected_lifetime_net_revenue_gbp": 92356.03,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q36",
+      "entity_type": "product_description",
+      "entity_name": "RABBIT NIGHT LIGHT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1051,
+      "expected_lifetime_net_revenue_gbp": 66756.59,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q37",
+      "entity_type": "product_description",
+      "entity_name": "PAPER CHAIN KIT 50'S CHRISTMAS",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1210,
+      "expected_lifetime_net_revenue_gbp": 63791.94,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q38",
+      "entity_type": "product_description",
+      "entity_name": "ASSORTED COLOUR BIRD ORNAMENT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1501,
+      "expected_lifetime_net_revenue_gbp": 58959.73,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q39",
+      "entity_type": "product_description",
+      "entity_name": "CHILLI LIGHTS",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 679,
+      "expected_lifetime_net_revenue_gbp": 53768.06,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q40",
+      "entity_type": "product_description",
+      "entity_name": "SPOTTY BUNTING",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1172,
+      "expected_lifetime_net_revenue_gbp": 42065.32,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q41",
+      "entity_type": "product_description",
+      "entity_name": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2369,
+      "expected_lifetime_net_revenue_gbp": 99668.47,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q42",
+      "entity_type": "product_description",
+      "entity_name": "WHITE METAL LANTERN",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 328,
+      "expected_lifetime_net_revenue_gbp": 7916.75,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q43",
+      "entity_type": "product_description",
+      "entity_name": "REGENCY CAKESTAND 3 TIER",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2200,
+      "expected_lifetime_net_revenue_gbp": 164762.19,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q44",
+      "entity_type": "product_description",
+      "entity_name": "PARTY BUNTING",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1727,
+      "expected_lifetime_net_revenue_gbp": 98302.98,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q45",
+      "entity_type": "product_description",
+      "entity_name": "JUMBO BAG RED RETROSPOT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 2159,
+      "expected_lifetime_net_revenue_gbp": 92356.03,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q46",
+      "entity_type": "product_description",
+      "entity_name": "RABBIT NIGHT LIGHT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1051,
+      "expected_lifetime_net_revenue_gbp": 66756.59,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q47",
+      "entity_type": "product_description",
+      "entity_name": "PAPER CHAIN KIT 50'S CHRISTMAS",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1210,
+      "expected_lifetime_net_revenue_gbp": 63791.94,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q48",
+      "entity_type": "product_description",
+      "entity_name": "ASSORTED COLOUR BIRD ORNAMENT",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1501,
+      "expected_lifetime_net_revenue_gbp": 58959.73,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q49",
+      "entity_type": "product_description",
+      "entity_name": "CHILLI LIGHTS",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 679,
+      "expected_lifetime_net_revenue_gbp": 53768.06,
+      "absolute_tolerance_gbp": 0.01
+    },
+    {
+      "question_id": "Q50",
+      "entity_type": "product_description",
+      "entity_name": "SPOTTY BUNTING",
+      "reference_sql": "SELECT COUNT(*), ROUND(COALESCE(SUM(revenue),0),2) FROM sales_facts WHERE product_name = ?",
+      "expected_source_rows": 1172,
+      "expected_lifetime_net_revenue_gbp": 42065.32,
+      "absolute_tolerance_gbp": 0.01
+    }
+  ]
+}

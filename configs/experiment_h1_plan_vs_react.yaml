@@ -1,0 +1,9 @@
+# Compare plan-first against ReAct-style execution; review/retrieval held off.
+experiment_name: experiment_h1_plan_vs_react
+experiment_modes: [react_baseline, plan_only]
+dataset_path: data/online_retail.sqlite
+output_dir: output
+planning_enabled: true
+output_review_enabled: false
+tool_retrieval_enabled: false
+workflow_mode: react_baseline

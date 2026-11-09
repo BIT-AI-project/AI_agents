@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "Q01",
+    "user_query": "Compare Q3 sales of WHITE HANGING HEART T-LIGHT HOLDER and WHITE METAL LANTERN, and show the best country.",
+    "category": "product_comparison",
+    "expected_artifacts": [
+      "report",
+      "chart"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q3 sales of WHITE HANGING HEART T-LIGHT HOLDER and WHITE METAL LANTERN, and show the best country.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=WHITE HANGING HEART T-LIGHT HOLDER; country=Australia; geography field=Country."
+  },
+  {
+    "id": "Q02",
+    "user_query": "Compare Q1 and Q2 revenue for WHITE METAL LANTERN.",
+    "category": "quarter_comparison",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q1 and Q2 revenue for WHITE METAL LANTERN.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=WHITE METAL LANTERN; country=Austria; geography field=Country."
+  },
+  {
+    "id": "Q03",
+    "user_query": "Which country had the highest sales for REGENCY CAKESTAND 3 TIER?",
+    "category": "best_country",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Which country had the highest sales for REGENCY CAKESTAND 3 TIER?",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=REGENCY CAKESTAND 3 TIER; country=Bahrain; geography field=Country."
+  },
+  {
+    "id": "Q04",
+    "user_query": "Top 5 products by revenue in Q4.",
+    "category": "top_n_products",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Top 5 products by revenue in Q4.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=PARTY BUNTING; country=Belgium; geography field=Country."
+  },
+  {
+    "id": "Q05",
+    "user_query": "Summarize sales in Brazil by product.",
+    "category": "country_performance",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Summarize sales in Brazil by product.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=JUMBO BAG RED RETROSPOT; country=Brazil; geography field=Country."
+  },
+  {
+    "id": "Q06",
+    "user_query": "Show the monthly sales trend for RABBIT NIGHT LIGHT.",
+    "category": "trend",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Show the monthly sales trend for RABBIT NIGHT LIGHT.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=RABBIT NIGHT LIGHT; country=Canada; geography field=Country."
+  },
+  {
+    "id": "Q07",
+    "user_query": "Find low-performing products in Q2 and rank by revenue.",
+    "category": "low_performing_products",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Find low-performing products in Q2 and rank by revenue.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=PAPER CHAIN KIT 50'S CHRISTMAS; country=Channel Islands; geography field=Country."
+  },
+  {
+    "id": "Q08",
+    "user_query": "Compare ASSORTED COLOUR BIRD ORNAMENT and CHILLI LIGHTS sales in Cyprus.",
+    "category": "country_product",
+    "expected_artifacts": [
+      "report",
+      "chart"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare ASSORTED COLOUR BIRD ORNAMENT and CHILLI LIGHTS sales in Cyprus.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=ASSORTED COLOUR BIRD ORNAMENT; country=Cyprus; geography field=Country."
+  },
+  {
+    "id": "Q09",
+    "user_query": "Create a chart of quarterly revenue for CHILLI LIGHTS.",
+    "category": "chart_required",
+    "expected_artifacts": [
+      "report",
+      "chart"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Create a chart of quarterly revenue for CHILLI LIGHTS.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report",
+      "chart"
+    ],
+    "notes": "Real UCI entities: product=CHILLI LIGHTS; country=Czech Republic; geography field=Country."
+  },
+  {
+    "id": "Q10",
+    "user_query": "Write a report on revenue by country for SPOTTY BUNTING.",
+    "category": "report_only",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Write a report on revenue by country for SPOTTY BUNTING.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=SPOTTY BUNTING; country=Denmark; geography field=Country."
+  },
+  {
+    "id": "Q11",
+    "user_query": "Compare Q3 revenue of the product white hanging heart t-light holdr (match it loosely) with WHITE METAL LANTERN and chart results.",
+    "category": "fuzzy_matching",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q3 revenue of the product white hanging heart t-light holdr (match it loosely) with WHITE METAL LANTERN and chart results.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report",
+      "chart"
+    ],
+    "notes": "Real UCI entities: product=WHITE HANGING HEART T-LIGHT HOLDER; country=EIRE; geography field=Country."
+  },
+  {
+    "id": "Q12",
+    "user_query": "Compare Q3 sales of WHITE METAL LANTERN and REGENCY CAKESTAND 3 TIER, and show the best country.",
+    "category": "product_comparison",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q3 sales of WHITE METAL LANTERN and REGENCY CAKESTAND 3 TIER, and show the best country.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=WHITE METAL LANTERN; country=European Community; geography field=Country."
+  },
+  {
+    "id": "Q13",
+    "user_query": "Compare Q1 and Q2 revenue for REGENCY CAKESTAND 3 TIER.",
+    "category": "quarter_comparison",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q1 and Q2 revenue for REGENCY CAKESTAND 3 TIER.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=REGENCY CAKESTAND 3 TIER; country=Finland; geography field=Country."
+  },
+  {
+    "id": "Q14",
+    "user_query": "Which country had the highest sales for PARTY BUNTING?",
+    "category": "best_country",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Which country had the highest sales for PARTY BUNTING?",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=PARTY BUNTING; country=France; geography field=Country."
+  },
+  {
+    "id": "Q15",
+    "user_query": "Top 5 products by revenue in Q4.",
+    "category": "top_n_products",
+    "expected_artifacts": [
+      "report",
+      "chart"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Top 5 products by revenue in Q4.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=JUMBO BAG RED RETROSPOT; country=Germany; geography field=Country."
+  },
+  {
+    "id": "Q16",
+    "user_query": "Summarize sales in Greece by product.",
+    "category": "country_performance",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Summarize sales in Greece by product.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=RABBIT NIGHT LIGHT; country=Greece; geography field=Country."
+  },
+  {
+    "id": "Q17",
+    "user_query": "Show the monthly sales trend for PAPER CHAIN KIT 50'S CHRISTMAS.",
+    "category": "trend",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Show the monthly sales trend for PAPER CHAIN KIT 50'S CHRISTMAS.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=PAPER CHAIN KIT 50'S CHRISTMAS; country=Hong Kong; geography field=Country."
+  },
+  {
+    "id": "Q18",
+    "user_query": "Find low-performing products in Q2 and rank by revenue.",
+    "category": "low_performing_products",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Find low-performing products in Q2 and rank by revenue.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=ASSORTED COLOUR BIRD ORNAMENT; country=Iceland; geography field=Country."
+  },
+  {
+    "id": "Q19",
+    "user_query": "Compare CHILLI LIGHTS and SPOTTY BUNTING sales in Israel.",
+    "category": "country_product",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare CHILLI LIGHTS and SPOTTY BUNTING sales in Israel.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=CHILLI LIGHTS; country=Israel; geography field=Country."
+  },
+  {
+    "id": "Q20",
+    "user_query": "Create a chart of quarterly revenue for SPOTTY BUNTING.",
+    "category": "chart_required",
+    "expected_artifacts": [
+      "report",
+      "chart"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Create a chart of quarterly revenue for SPOTTY BUNTING.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report",
+      "chart"
+    ],
+    "notes": "Real UCI entities: product=SPOTTY BUNTING; country=Italy; geography field=Country."
+  },
+  {
+    "id": "Q21",
+    "user_query": "Write a report on revenue by country for WHITE HANGING HEART T-LIGHT HOLDER.",
+    "category": "report_only",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Write a report on revenue by country for WHITE HANGING HEART T-LIGHT HOLDER.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=WHITE HANGING HEART T-LIGHT HOLDER; country=Japan; geography field=Country."
+  },
+  {
+    "id": "Q22",
+    "user_query": "Compare Q3 revenue of the product white metal lantern (match it loosely) with REGENCY CAKESTAND 3 TIER and chart results.",
+    "category": "fuzzy_matching",
+    "expected_artifacts": [
+      "report",
+      "chart"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q3 revenue of the product white metal lantern (match it loosely) with REGENCY CAKESTAND 3 TIER and chart results.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report",
+      "chart"
+    ],
+    "notes": "Real UCI entities: product=WHITE METAL LANTERN; country=Lebanon; geography field=Country."
+  },
+  {
+    "id": "Q23",
+    "user_query": "Compare Q3 sales of REGENCY CAKESTAND 3 TIER and PARTY BUNTING, and show the best country.",
+    "category": "product_comparison",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q3 sales of REGENCY CAKESTAND 3 TIER and PARTY BUNTING, and show the best country.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=REGENCY CAKESTAND 3 TIER; country=Lithuania; geography field=Country."
+  },
+  {
+    "id": "Q24",
+    "user_query": "Compare Q1 and Q2 revenue for PARTY BUNTING.",
+    "category": "quarter_comparison",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q1 and Q2 revenue for PARTY BUNTING.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=PARTY BUNTING; country=Malta; geography field=Country."
+  },
+  {
+    "id": "Q25",
+    "user_query": "Which country had the highest sales for JUMBO BAG RED RETROSPOT?",
+    "category": "best_country",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Which country had the highest sales for JUMBO BAG RED RETROSPOT?",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=JUMBO BAG RED RETROSPOT; country=Netherlands; geography field=Country."
+  },
+  {
+    "id": "Q26",
+    "user_query": "Top 5 products by revenue in Q4.",
+    "category": "top_n_products",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Top 5 products by revenue in Q4.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=RABBIT NIGHT LIGHT; country=Norway; geography field=Country."
+  },
+  {
+    "id": "Q27",
+    "user_query": "Summarize sales in Poland by product.",
+    "category": "country_performance",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Summarize sales in Poland by product.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=PAPER CHAIN KIT 50'S CHRISTMAS; country=Poland; geography field=Country."
+  },
+  {
+    "id": "Q28",
+    "user_query": "Show the monthly sales trend for ASSORTED COLOUR BIRD ORNAMENT.",
+    "category": "trend",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Show the monthly sales trend for ASSORTED COLOUR BIRD ORNAMENT.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=ASSORTED COLOUR BIRD ORNAMENT; country=Portugal; geography field=Country."
+  },
+  {
+    "id": "Q29",
+    "user_query": "Find low-performing products in Q2 and rank by revenue.",
+    "category": "low_performing_products",
+    "expected_artifacts": [
+      "report",
+      "chart"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Find low-performing products in Q2 and rank by revenue.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=CHILLI LIGHTS; country=RSA; geography field=Country."
+  },
+  {
+    "id": "Q30",
+    "user_query": "Compare SPOTTY BUNTING and WHITE HANGING HEART T-LIGHT HOLDER sales in Saudi Arabia.",
+    "category": "country_product",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare SPOTTY BUNTING and WHITE HANGING HEART T-LIGHT HOLDER sales in Saudi Arabia.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=SPOTTY BUNTING; country=Saudi Arabia; geography field=Country."
+  },
+  {
+    "id": "Q31",
+    "user_query": "Create a chart of quarterly revenue for WHITE HANGING HEART T-LIGHT HOLDER.",
+    "category": "chart_required",
+    "expected_artifacts": [
+      "report",
+      "chart"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Create a chart of quarterly revenue for WHITE HANGING HEART T-LIGHT HOLDER.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report",
+      "chart"
+    ],
+    "notes": "Real UCI entities: product=WHITE HANGING HEART T-LIGHT HOLDER; country=Singapore; geography field=Country."
+  },
+  {
+    "id": "Q32",
+    "user_query": "Write a report on revenue by country for WHITE METAL LANTERN.",
+    "category": "report_only",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Write a report on revenue by country for WHITE METAL LANTERN.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=WHITE METAL LANTERN; country=Spain; geography field=Country."
+  },
+  {
+    "id": "Q33",
+    "user_query": "Compare Q3 revenue of the product regency cakestand 3 tier (match it loosely) with PARTY BUNTING and chart results.",
+    "category": "fuzzy_matching",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q3 revenue of the product regency cakestand 3 tier (match it loosely) with PARTY BUNTING and chart results.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report",
+      "chart"
+    ],
+    "notes": "Real UCI entities: product=REGENCY CAKESTAND 3 TIER; country=Sweden; geography field=Country."
+  },
+  {
+    "id": "Q34",
+    "user_query": "Compare Q3 sales of PARTY BUNTING and JUMBO BAG RED RETROSPOT, and show the best country.",
+    "category": "product_comparison",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q3 sales of PARTY BUNTING and JUMBO BAG RED RETROSPOT, and show the best country.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=PARTY BUNTING; country=Switzerland; geography field=Country."
+  },
+  {
+    "id": "Q35",
+    "user_query": "Compare Q1 and Q2 revenue for JUMBO BAG RED RETROSPOT.",
+    "category": "quarter_comparison",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q1 and Q2 revenue for JUMBO BAG RED RETROSPOT.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=JUMBO BAG RED RETROSPOT; country=USA; geography field=Country."
+  },
+  {
+    "id": "Q36",
+    "user_query": "Which country had the highest sales for RABBIT NIGHT LIGHT?",
+    "category": "best_country",
+    "expected_artifacts": [
+      "report",
+      "chart"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Which country had the highest sales for RABBIT NIGHT LIGHT?",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=RABBIT NIGHT LIGHT; country=United Arab Emirates; geography field=Country."
+  },
+  {
+    "id": "Q37",
+    "user_query": "Top 5 products by revenue in Q4.",
+    "category": "top_n_products",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Top 5 products by revenue in Q4.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=PAPER CHAIN KIT 50'S CHRISTMAS; country=United Kingdom; geography field=Country."
+  },
+  {
+    "id": "Q38",
+    "user_query": "Summarize sales in Unspecified by product.",
+    "category": "country_performance",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Summarize sales in Unspecified by product.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=ASSORTED COLOUR BIRD ORNAMENT; country=Unspecified; geography field=Country."
+  },
+  {
+    "id": "Q39",
+    "user_query": "Show the monthly sales trend for CHILLI LIGHTS.",
+    "category": "trend",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Show the monthly sales trend for CHILLI LIGHTS.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=CHILLI LIGHTS; country=Australia; geography field=Country."
+  },
+  {
+    "id": "Q40",
+    "user_query": "Find low-performing products in Q2 and rank by revenue.",
+    "category": "low_performing_products",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Find low-performing products in Q2 and rank by revenue.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=SPOTTY BUNTING; country=Austria; geography field=Country."
+  },
+  {
+    "id": "Q41",
+    "user_query": "Compare WHITE HANGING HEART T-LIGHT HOLDER and WHITE METAL LANTERN sales in Bahrain.",
+    "category": "country_product",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare WHITE HANGING HEART T-LIGHT HOLDER and WHITE METAL LANTERN sales in Bahrain.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=WHITE HANGING HEART T-LIGHT HOLDER; country=Bahrain; geography field=Country."
+  },
+  {
+    "id": "Q42",
+    "user_query": "Create a chart of quarterly revenue for WHITE METAL LANTERN.",
+    "category": "chart_required",
+    "expected_artifacts": [
+      "report",
+      "chart"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Create a chart of quarterly revenue for WHITE METAL LANTERN.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report",
+      "chart"
+    ],
+    "notes": "Real UCI entities: product=WHITE METAL LANTERN; country=Belgium; geography field=Country."
+  },
+  {
+    "id": "Q43",
+    "user_query": "Write a report on revenue by country for REGENCY CAKESTAND 3 TIER.",
+    "category": "report_only",
+    "expected_artifacts": [
+      "report",
+      "chart"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Write a report on revenue by country for REGENCY CAKESTAND 3 TIER.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=REGENCY CAKESTAND 3 TIER; country=Brazil; geography field=Country."
+  },
+  {
+    "id": "Q44",
+    "user_query": "Compare Q3 revenue of the product party bunting (match it loosely) with JUMBO BAG RED RETROSPOT and chart results.",
+    "category": "fuzzy_matching",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q3 revenue of the product party bunting (match it loosely) with JUMBO BAG RED RETROSPOT and chart results.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report",
+      "chart"
+    ],
+    "notes": "Real UCI entities: product=PARTY BUNTING; country=Canada; geography field=Country."
+  },
+  {
+    "id": "Q45",
+    "user_query": "Compare Q3 sales of JUMBO BAG RED RETROSPOT and RABBIT NIGHT LIGHT, and show the best country.",
+    "category": "product_comparison",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q3 sales of JUMBO BAG RED RETROSPOT and RABBIT NIGHT LIGHT, and show the best country.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=JUMBO BAG RED RETROSPOT; country=Channel Islands; geography field=Country."
+  },
+  {
+    "id": "Q46",
+    "user_query": "Compare Q1 and Q2 revenue for RABBIT NIGHT LIGHT.",
+    "category": "quarter_comparison",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Compare Q1 and Q2 revenue for RABBIT NIGHT LIGHT.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=RABBIT NIGHT LIGHT; country=Cyprus; geography field=Country."
+  },
+  {
+    "id": "Q47",
+    "user_query": "Which country had the highest sales for PAPER CHAIN KIT 50'S CHRISTMAS?",
+    "category": "best_country",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Which country had the highest sales for PAPER CHAIN KIT 50'S CHRISTMAS?",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=PAPER CHAIN KIT 50'S CHRISTMAS; country=Czech Republic; geography field=Country."
+  },
+  {
+    "id": "Q48",
+    "user_query": "Top 5 products by revenue in Q4.",
+    "category": "top_n_products",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Top 5 products by revenue in Q4.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=ASSORTED COLOUR BIRD ORNAMENT; country=Denmark; geography field=Country."
+  },
+  {
+    "id": "Q49",
+    "user_query": "Summarize sales in EIRE by product.",
+    "category": "country_performance",
+    "expected_artifacts": [
+      "report"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Summarize sales in EIRE by product.",
+    "difficulty": "medium",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=CHILLI LIGHTS; country=EIRE; geography field=Country."
+  },
+  {
+    "id": "Q50",
+    "user_query": "Show the monthly sales trend for SPOTTY BUNTING.",
+    "category": "trend",
+    "expected_artifacts": [
+      "report",
+      "chart"
+    ],
+    "expected_tools": [
+      "sql_schema_inspect",
+      "sql_query",
+      "python_execute",
+      "save_markdown_report"
+    ],
+    "expected_answer_summary": "Answer using UCI Online Retail invoice lines, including returns as negative adjustments: Show the monthly sales trend for SPOTTY BUNTING.",
+    "difficulty": "hard",
+    "required_capabilities": [
+      "read_sql",
+      "aggregate",
+      "report"
+    ],
+    "notes": "Real UCI entities: product=SPOTTY BUNTING; country=European Community; geography field=Country."
+  }
+]

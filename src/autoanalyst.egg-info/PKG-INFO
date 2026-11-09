@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: autoanalyst
+Version: 0.1.0
+Summary: A configurable LangGraph business data analysis agent
+Requires-Python: >=3.11
+Requires-Dist: langgraph<1.0,>=0.2
+Requires-Dist: langchain-core>=0.3
+Requires-Dist: pydantic>=2.7
+Requires-Dist: pandas>=2.0
+Requires-Dist: matplotlib>=3.7
+Requires-Dist: openpyxl>=3.1
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: openai>=1.30
+Requires-Dist: anthropic>=0.84
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: pytest-cov>=5.0; extra == "dev"

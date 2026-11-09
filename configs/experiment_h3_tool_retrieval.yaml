@@ -1,0 +1,9 @@
+# Compare all_tools and retrieved_tools with planning and review enabled.
+experiment_name: experiment_h3_tool_retrieval
+experiment_modes: [plan_with_review, plan_with_review_and_retrieval]
+dataset_path: data/online_retail.sqlite
+output_dir: output
+planning_enabled: true
+output_review_enabled: true
+tool_retrieval_enabled: false
+workflow_mode: plan_with_review
