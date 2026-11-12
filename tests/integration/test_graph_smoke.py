@@ -1,6 +1,14 @@
 from pathlib import Path
 from autoanalyst.cli import run_analysis
 
+def test_no_matching_rows_finishes_with_explanatory_report(config):
+    q="Compare SPOTTY BUNTING and WHITE HANGING HEART T-LIGHT HOLDER sales in Saudi Arabia."
+    for mode in ("react_baseline","plan_with_review_and_retrieval"):
+        result=run_analysis(q,config.with_mode(mode))
+        assert result["status"]=="completed"
+        assert not result["chart_files"]
+        assert "No matching sales rows" in Path(result["report_file"]).read_text(encoding="utf-8")
+
 def test_end_to_end_plan_review_report_chart(config):
     result=run_analysis("Compare Q3 sales of WHITE HANGING HEART T-LIGHT HOLDER and WHITE METAL LANTERN, and show the best region.",config)
     assert result["status"]=="completed"

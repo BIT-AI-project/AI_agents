@@ -5,8 +5,11 @@ from autoanalyst.config import AppConfig
 from autoanalyst.evaluation.runner import run_evaluation
 
 def main():
-    parser=argparse.ArgumentParser(); parser.add_argument("--config",required=False); parser.add_argument("--questions"); parser.add_argument("--limit",type=int)
+    parser=argparse.ArgumentParser(); parser.add_argument("--config",required=False); parser.add_argument("--questions"); parser.add_argument("--limit",type=int); parser.add_argument("--clean-runs",action="store_true",help="Delete previous run folders in output/runs before evaluating")
     args=parser.parse_args(); cfg=AppConfig.load(args.config)
+    if args.clean_runs:
+        from autoanalyst.cli import clean_runs
+        print(f"Removed {clean_runs(cfg)} previous run(s) from {cfg.output_dir/'runs'}")
     if args.limit:
         from pathlib import Path
         import json,tempfile
