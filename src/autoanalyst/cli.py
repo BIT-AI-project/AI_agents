@@ -8,6 +8,17 @@ from autoanalyst.llm.fake_client import FakeLLM
 from autoanalyst.retrieval.tool_registry import build_registry
 from autoanalyst.state.models import AgentState
 
+def clean_runs(config) -> int:
+    """Delete all previous run folders in <output_dir>/runs. Returns the number of removed entries."""
+    runs=(config.output_dir/"runs").resolve()
+    if runs.name!="runs" or not runs.is_dir(): return 0
+    removed=0
+    for entry in runs.iterdir():
+        if entry.is_dir(): shutil.rmtree(entry,ignore_errors=True)
+        else: entry.unlink(missing_ok=True)
+        removed+=1
+    return removed
+
 def make_llm(config):
     if config.llm_provider=="fake":
         return FakeLLM()
@@ -58,8 +69,10 @@ def main(argv=None):
     parser=argparse.ArgumentParser(description="Analyze business data with AutoAnalyst")
     parser.add_argument("--query",required=True); parser.add_argument("--config")
     parser.add_argument("--mode",choices=["react_baseline","plan_only","plan_with_review","plan_with_review_and_retrieval"])
+    parser.add_argument("--clean-runs",action="store_true",help="Delete previous run folders in output/runs before running")
     args=parser.parse_args(argv); config=AppConfig.load(args.config)
     if args.mode: config=config.with_mode(args.mode)
+    if args.clean_runs: print(f"Removed {clean_runs(config)} previous run(s) from {config.output_dir/'runs'}")
     state=run_analysis(args.query,config)
     provider=state.get("metrics",{}).get("llm_provider",config.llm_provider)
     model=state.get("metrics",{}).get("llm_model") or ("deterministic FakeLLM" if provider=="fake" else "server default")

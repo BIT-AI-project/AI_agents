@@ -141,6 +141,8 @@ def _prepare_report(state):
     returned_products=set(analysis.get("product_names",[])) or {r.get("product_name") for r in rows}
     absent=[p.replace("''","'") for p in requested if p.replace("''","'") not in returned_products]
     if absent and not re.search(r"\b(profit|margin)\b",state["normalized_query"],re.I): summary += " No matching sales rows were found for: "+", ".join(absent)+"."
+    if (sql.get("output") or {}).get("row_count")==0:
+        summary="No matching sales rows were found for this request, so no metrics or chart were produced."+(" Not found: "+", ".join(absent)+"." if absent else "")
     chart=state.get("chart_files",[])
     order_desc="quantity" if metric=="quantity" else "revenue"
     limitations=["The source dataset contains no cost data; profit and margin cannot be calculated.","No product category field is present in the source dataset."]
@@ -182,12 +184,13 @@ def choose_next_action(state,ctx):
         state["selected_tool_name"]="sql_query"; state["selected_tool_args"]={"query":_build_query(state,ctx["config"].dataset_path)}
     elif sum(1 for n in names if n=="python_execute") < (2 if state.get("planning_enabled") else 1):
         sql=next((o for o in reversed(outputs) if o.get("tool_name")=="sql_query" and o.get("status")=="success"),{}); q=(sql.get("output") or {}).get("query","")
+        no_rows=(sql.get("output") or {}).get("row_count")==0
         db_uri=Path(ctx["config"].dataset_path).resolve().as_uri()+"?mode=ro"
         chart_metric="quantity" if re.search(r"\b(quantity|units? sold)\b",state["normalized_query"],re.I) else "revenue"
         chart_stage=not state.get("planning_enabled") or sum(1 for n in names if n=="python_execute")>=1
         code=_python_analysis_code(q,db_uri,chart_metric,chart_stage)
         description="Create a chart and calculate final metrics from read-only SQL results" if chart_stage else "Calculate and validate metrics from read-only SQL results"
-        state["selected_tool_name"]="python_execute"; state["selected_tool_args"]={"code":code,"description":description,"expected_files":["charts/sales_analysis.png"] if chart_stage else []}
+        state["selected_tool_name"]="python_execute"; state["selected_tool_args"]={"code":code,"description":description,"expected_files":["charts/sales_analysis.png"] if chart_stage and not no_rows else []}
     elif "save_markdown_report" not in names:
         _prepare_report(state); state["selected_tool_name"]="save_markdown_report"; state["selected_tool_args"]=state["pending_report"]
     else:
@@ -267,7 +270,7 @@ def review_tool_output(state,ctx):
     if result.get("status")=="success" and review.verdict=="fail" and result.get("tool_name")!="sql_query": review.verdict="pass"
     if result.get("status")=="error": review.verdict="fail"
     if result.get("tool_name")=="sql_query" and result.get("status")=="success" and (result.get("output") or {}).get("row_count")==0:
-        review.verdict="uncertain"; review.reason="SQL returned no rows; confirm entity spelling and filters"; review.missing_information=["matching sales rows"]
+        review.verdict = "pass"; review.reason = "SQL returned no rows; the report will state that no matching data exists"
     expects_chart=bool((state.get("selected_tool_args") or {}).get("expected_files"))
     if result.get("tool_name")=="python_execute" and result.get("status")=="success" and expects_chart and not (result.get("output") or {}).get("chart_files"):
         review.verdict="fail"; review.reason="Expected a chart, but no PNG chart was saved"; review.corrective_action="Generate a PNG under CHART_DIR"
